@@ -251,6 +251,7 @@ export default function Home() {
           </ul>
           <div className="flex flex-col space-y-3 md:flex-row md:space-x-2 md:space-y-0">
             <a
+              id="cta-whatsapp"
               target="_blank"
               href="https://api.whatsapp.com/send?phone=5519992179295&text=Ol%C3%A1!%20Gostaria%20de%20receber%20uma%20Cota%C3%A7%C3%A3o%20Gratuita"
               className="rounded-lg border-0 bg-slate-900 px-6 py-3 text-base text-white shadow-lg shadow-slate-300 transition hover:bg-orange-300 hover:text-slate-900 hover:shadow-orange-300 dark:bg-orange-300 dark:text-black dark:shadow-sm dark:shadow-orange-300 dark:hover:bg-orange-400 sm:py-2"
