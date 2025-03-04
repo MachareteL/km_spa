@@ -19,9 +19,6 @@ export default function Home() {
 
   return (
     <>
-      <button className="text-white" onClick={sendGAWhatsappEvent}>
-        DEBUG
-      </button>
       <header className="container mx-auto flex w-full items-center justify-between py-4 px-6">
         <div className="w-full text-center text-lg font-extrabold sm:w-fit sm:text-left">
           <Image
