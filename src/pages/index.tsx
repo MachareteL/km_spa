@@ -6,10 +6,16 @@ import JuliaProfilePicture from "../../public/Julia_profile_picture.jpg";
 import FlatLogo from "../../public/logo-site-1.png";
 import RoundedLogo from "../../public/logo_km-protecao-veicular.png";
 import { useState } from "react";
+import { sendGAEvent } from "@next/third-parties/google";
 
 export default function Home() {
   const [mobileNavigationOpened, setMobileNavigationOpened] = useState(false);
   const closeMobileNavigation = () => setMobileNavigationOpened(false);
+
+  function sendGAWhatsappEvent() {
+    console.log("sending GA event");
+    sendGAEvent('event', 'whatsapp_cta', {value: new Date().toLocaleDateString()});
+  }
 
   return (
     <>
@@ -153,6 +159,7 @@ export default function Home() {
           <Image
             alt="Hanging out with friends"
             className="rounded-lg sm:rounded-br-[80px] sm:rounded-tl-[120px]"
+            priority
             src={DriverHeader}
           />
         </div>
@@ -247,6 +254,7 @@ export default function Home() {
               target="_blank"
               href="https://api.whatsapp.com/send?phone=5519992179295&text=Ol%C3%A1!%20Gostaria%20de%20receber%20uma%20Cota%C3%A7%C3%A3o%20Gratuita"
               className="rounded-lg border-0 bg-slate-900 px-6 py-3 text-base text-white shadow-lg shadow-slate-300 transition hover:bg-orange-300 hover:text-slate-900 hover:shadow-orange-300 dark:bg-orange-300 dark:text-black dark:shadow-sm dark:shadow-orange-300 dark:hover:bg-orange-400 sm:py-2"
+              onClick={sendGAWhatsappEvent}
             >
               <svg
                 fill="#000000"
@@ -258,7 +266,7 @@ export default function Home() {
                 width="1.7em"
                 className="inline-flex mr-2"
               >
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                 <g
                   id="SVGRepo_tracerCarrier"
                   strokeLinecap="round"
