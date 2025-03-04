@@ -14,7 +14,7 @@ export default function Home() {
 
   function sendGAWhatsappEvent() {
     console.log("sending GA event");
-    sendGAEvent('event', 'whatsapp_cta', {value: new Date().toLocaleDateString()});
+    sendGAEvent({event: 'whatsapp_cta_clicked', value: new Date().toLocaleDateString()});
   }
 
   return (
