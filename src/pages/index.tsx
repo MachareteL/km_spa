@@ -31,7 +31,7 @@ export default function Home() {
           <ul className="flex items-center space-x-2">
             <li className="group relative">
               <a
-                className="block whitespace-nowrap px-2 py-2 text-sm text-slate-400 no-underline transition hover:text-slate-900 dark:hover:text-slate-50"
+                className="block whitespace-nowrap px-2 py-2 text-sm dark:text-slate-400 no-underline transition hover:text-slate-900 dark:hover:text-slate-50"
                 href="#beneficios"
               >
                 Benefícios
@@ -39,7 +39,7 @@ export default function Home() {
             </li>
             <li className="group relative">
               <a
-                className="block whitespace-nowrap px-2 py-2 text-sm text-slate-400 no-underline transition hover:text-slate-900 dark:hover:text-slate-50"
+                className="block whitespace-nowrap px-2 py-2 text-sm dark:text-slate-400 no-underline transition hover:text-slate-900 dark:hover:text-slate-50"
                 href="#relatos"
               >
                 Relatos
@@ -47,7 +47,7 @@ export default function Home() {
             </li>
             <li className="group relative">
               <a
-                className="block whitespace-nowrap px-2 py-2 text-sm text-slate-400 no-underline transition hover:text-slate-900 dark:hover:text-slate-50"
+                className="block whitespace-nowrap px-2 py-2 text-sm dark:text-slate-400 no-underline transition hover:text-slate-900 dark:hover:text-slate-50"
                 href="#quem-somos"
               >
                 Quem Somos
@@ -254,7 +254,7 @@ export default function Home() {
               id="cta-whatsapp"
               target="_blank"
               href="https://api.whatsapp.com/send?phone=5519992179295&text=Ol%C3%A1!%20Gostaria%20de%20receber%20uma%20Cota%C3%A7%C3%A3o%20Gratuita"
-              className="rounded-lg border-0 bg-slate-900 px-6 py-3 text-base text-white shadow-lg shadow-slate-300 transition hover:bg-orange-300 hover:text-slate-900 hover:shadow-orange-300 dark:bg-orange-300 dark:text-black dark:shadow-sm dark:shadow-orange-300 dark:hover:bg-orange-400 sm:py-2"
+              className="rounded-lg border-0 px-6 py-3 text-base shadow-lg shadow-slate-300 transition hover:bg-orange-300 hover:text-slate-900 hover:shadow-orange-300 bg-orange-300 dark:text-black dark:shadow-sm dark:shadow-orange-300 dark:hover:bg-orange-400 sm:py-2"
               onClick={sendGAWhatsappEvent}
             >
               <svg
@@ -282,9 +282,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section
-        id="beneficios"
-        className="container mx-auto px-8 py-14 sm:px-12"
+      <section id="beneficios" className="container mx-auto px-8 py-14 sm:px-12"
       >
         <h1 className="sm:mb-18 mb-12 w-full text-center text-4xl font-extrabold dark:text-slate-50 sm:mx-auto sm:w-4/5">
           Benefícios 24h <span className="text-violet-500">do associado </span>
@@ -389,7 +387,7 @@ export default function Home() {
               Proteja seu veículo com um seguro confiável e acessível.
             </div>
             <ul className="mt-6 mb-8 text-sm text-violet-100 md:mb-0">
-              <li className="flex items-center justify-center md:justify-start">
+              <li className="flex items-center">
                 <svg
                   preserveAspectRatio="xMidYMid meet"
                   viewBox="0 0 24 24"
@@ -408,7 +406,7 @@ export default function Home() {
                 </svg>
                 Preço justo
               </li>
-              <li className="flex items-center justify-center md:justify-start">
+              <li className="flex items-center">
                 <svg
                   preserveAspectRatio="xMidYMid meet"
                   viewBox="0 0 24 24"
@@ -427,7 +425,7 @@ export default function Home() {
                 </svg>
                 Cancele a qualquer momento
               </li>
-              <li className="flex items-center justify-center md:justify-start">
+              <li className="flex items-center">
                 <svg
                   preserveAspectRatio="xMidYMid meet"
                   viewBox="0 0 24 24"
@@ -536,9 +534,9 @@ export default function Home() {
               />
             </div>
           </div>
-          <div className="w-full text-center text-slate-400 md:text-left">
+          <div className="w-full text-center dark:text-slate-400 md:text-left">
             <div className="text-lg font-semibold mb-4">Quem somos?</div>
-            <span className="text-slate-300 text-sm">
+            <span className="dark:text-slate-300 text-sm">
               <p>
                 A KM Proteção Veicular nasceu com o propósito de oferecer
                 segurança e tranquilidade aos seus associados.
