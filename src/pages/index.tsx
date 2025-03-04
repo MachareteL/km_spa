@@ -471,16 +471,13 @@ export default function Home() {
                 src={LucasProfile}
               />
               <p className="mb-6 leading-relaxed text-slate-500 dark:text-slate-400">
-                Serviço bem bacana. Sempre falo com pessoas de verdade, sem
-                aquele atendimento robótico. Me ajudam quando preciso, quando
-                preciso o consultor também ajuda indicando onde e com quem
-                preciso falar. Recomendo.
+                Fale sempre com pessoas de verdade, atendimento humanizado. Consultores sempre dispostos a atender e resolver os problemas!
               </p>
               <div className="font-semibold text-slate-600">
                 Lucas Macharete
               </div>
               <div className="text-xs text-slate-400">
-                Associado KM - Avaliação Whatsapp
+                Associado KM
               </div>
             </div>
           </div>
