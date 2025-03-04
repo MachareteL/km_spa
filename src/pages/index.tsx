@@ -14,11 +14,14 @@ export default function Home() {
 
   function sendGAWhatsappEvent() {
     console.log("sending GA event");
-    sendGAEvent({event: 'whatsapp_cta_clicked', value: {currentDateTime: new Date().toLocaleDateString()}});
+    sendGAEvent("event", "whatsapp_cta", { horario: String(new Date()) });
   }
 
   return (
     <>
+      <button className="text-white" onClick={sendGAWhatsappEvent}>
+        DEBUG
+      </button>
       <header className="container mx-auto flex w-full items-center justify-between py-4 px-6">
         <div className="w-full text-center text-lg font-extrabold sm:w-fit sm:text-left">
           <Image
@@ -540,27 +543,27 @@ export default function Home() {
             <div className="text-lg font-semibold mb-4">Quem somos?</div>
             <span className="text-slate-300 text-sm">
               <p>
-                A KM Proteção Veicular nasceu com o propósito de oferecer segurança e tranquilidade aos seus
-                associados.
+                A KM Proteção Veicular nasceu com o propósito de oferecer
+                segurança e tranquilidade aos seus associados.
                 <br />
                 <br />
-                Com um modelo de proteção acessível e sem
-                burocracia, a empresa se consolidou no mercado ao proporcionar
-                um serviço confiável e eficiente. Com o crescimento e a
-                confiança dos clientes, a KM expandiu sua atuação e agora conta
-                com uma filial em Sumaré, São Paulo, garantindo suporte e
-                atendimento personalizado na região.
+                Com um modelo de proteção acessível e sem burocracia, a empresa
+                se consolidou no mercado ao proporcionar um serviço confiável e
+                eficiente. Com o crescimento e a confiança dos clientes, a KM
+                expandiu sua atuação e agora conta com uma filial em Sumaré, São
+                Paulo, garantindo suporte e atendimento personalizado na região.
                 <br />
                 <br />
-                Temos um atendimento online rápido e prestativo contudo visando a transparência e a confiança temos escritórios fisícos e visitas presenciais, conforme a necessidade do cliente.
-                Estamos sempre disponíveis para oferecer a melhor experiência em
+                Temos um atendimento online rápido e prestativo contudo visando
+                a transparência e a confiança temos escritórios fisícos e
+                visitas presenciais, conforme a necessidade do cliente. Estamos
+                sempre disponíveis para oferecer a melhor experiência em
                 proteção veicular.
                 <br />
                 <br />
-                Nosso compromisso vai além da proteção de
-                veículos; buscamos entregar um atendimento humanizado e
-                transparente, sempre priorizando a satisfação e a segurança de
-                nossos associados.
+                Nosso compromisso vai além da proteção de veículos; buscamos
+                entregar um atendimento humanizado e transparente, sempre
+                priorizando a satisfação e a segurança de nossos associados.
                 <br />
                 <br />
               </p>
