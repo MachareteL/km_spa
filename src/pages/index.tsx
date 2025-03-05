@@ -23,7 +23,7 @@ export default function Home() {
         <div className="w-full text-center text-lg font-extrabold sm:w-fit sm:text-left">
           <Image
             src={FlatLogo}
-            alt="KM Proteção Veicular Logo"
+            alt="Seguro automotivo - cotação de seguro"
             className="bg-white w-48 rounded-md px-4"
           />
         </div>
@@ -95,6 +95,7 @@ export default function Home() {
           <ul className="flex flex-col space-y-2">
             <li className="text-right">
               <button
+                title="goBackArrow"
                 className="px-6 py-2 text-slate-400 hover:text-slate-900 dark:hover:text-slate-50"
                 onClick={closeMobileNavigation}
               >
@@ -157,7 +158,7 @@ export default function Home() {
       <section className="container mx-auto flex flex-col items-center px-4 pb-28 py-12 sm:pt-24 sm:flex-row-reverse sm:px-12">
         <div className="mb-8 w-full sm:mb-0 sm:w-1/2 sm:pl-4 md:pl-16">
           <Image
-            alt="Hanging out with friends"
+            alt="Seguro de carro, moto e caminhão"
             className="rounded-lg sm:rounded-br-[80px] sm:rounded-tl-[120px]"
             priority
             src={DriverHeader}
@@ -502,7 +503,7 @@ export default function Home() {
           <div className="flex w-full flex-col justify-between rounded-lg bg-white py-8 px-6 text-center text-slate-800 shadow-lg shadow-slate-200 transition dark:bg-slate-800 dark:shadow-slate-800">
             <div className="w-full text-center text-sm">
               <Image
-                alt="Hanging out with friends"
+                alt="Seguradora de confiança, seguro barato"
                 className="mx-auto mb-8 h-20 w-20 rounded-full"
                 src={NoProfilePicture}
               />
@@ -526,7 +527,7 @@ export default function Home() {
             <div className="w-full text-lg font-extrabold md:w-fit md:text-left">
               <Image
                 src={RoundedLogo}
-                alt="KM Proteção Veicular Logo"
+                alt="Simular seguro de carro"
                 className="bg-white w-48 rounded-full p-2 m-auto"
               />
             </div>
