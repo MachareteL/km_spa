@@ -14,7 +14,7 @@ export default function Home() {
 
   function sendGAWhatsappEvent() {
     console.log("sending GA event");
-    sendGAEvent("event", "whatsapp_cta", { value: String(new Date()) });
+    sendGAEvent("event", "whatsapp_cta_new", { value: { horario: String(new Date())} });
   }
 
   return (
